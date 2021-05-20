@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Docs Video Thing</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>
+		Use the AHK script to generate a commented character for each frame.<br>
+		Copy that series of characters into the text box below.<br>
+		Convert the video using the command <code>ffmpeg -i INFILE -s WIDTHxHEIGHT -filter:v fps=FPS -f rawvideo -pix_fmt monob OUTFILE</code> and upload it below.<br>
+		Add the values for the video resolution.<br>
+		Copy the contents of the output, and then paste back into Google Docs.
+	</p>
+	<table>
+		<tr><td>Paste here:</td><td><input id="pastebox" type="text"></td></tr>
+		<tr><td>Video:</td><td><input id="fileselect" type="file"></td></tr>
+		<tr><td>Width:</td><td><input id="width" type="number">, Height: <input id="height" type="number"></td></tr>
+		<tr><td>Output:</td><td><input id="copybox" value="COPY ME SENPAI"></td></tr>
+	</table>
+	<script src="commentimation.js"></script>
+</body>
+</html>
